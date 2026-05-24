@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Hanken Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-amber-500: #ffb800;
+  --color-brand-primary: #ffdca1;
+  --color-brand-amber: #ffb800;
+  --color-bg-dark: #111417;
+  --color-bg-card: #191c20;
+  --color-bg-heavy: #0b0e12;
+  --color-industry-charcoal: #1d2024;
+  --color-industry-slate: #323539;
+  --color-text-light: #e1e2e8;
+  --color-text-muted: #d5c4ab;
+  --color-outline-gold: #9e8f78;
+  --color-outline-bronze: #514532;
+}
+
+/* Custom background grid element to give a factory blueprint/graph paper feel */
+.grid-blueprint {
+  background-image: 
+    linear-gradient(to right, rgba(158, 143, 120, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(158, 143, 120, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Industrial warning dynamic hazard stripes pattern */
+.hazard-stripes {
+  background: repeating-linear-gradient(
+    45deg,
+    #ffb800,
+    #ffb800 12px,
+    #111417 12px,
+    #111417 24px
+  );
+}
+
+.hazard-stripes-mini {
+  background: repeating-linear-gradient(
+    45deg,
+    #ffb800,
+    #ffb800 6px,
+    #111417 6px,
+    #111417 12px
+  );
+}
+
+.hazard-stripes-subtle {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255, 184, 0, 0.15),
+    rgba(255, 184, 0, 0.15) 12px,
+    transparent 12px,
+    transparent 24px
+  );
+}
+
+/* Smooth custom scrollbars for high fidelity */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0e12;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #323539;
+  border: 2px solid #0b0e12;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffb800;
+}
+

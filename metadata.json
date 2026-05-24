@@ -1,0 +1,6 @@
+{
+  "name": "Chamunda Enterprise",
+  "description": "Premium industrial manufacturing website for Chamunda Enterprise, specializing in precision wire-forming, CNC bending, and customized metal fabrication based in Gujarat, India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
